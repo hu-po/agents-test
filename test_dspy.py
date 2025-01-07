@@ -1,6 +1,7 @@
+import os
 import dspy
 
-lm = dspy.LM('openai/gpt-4o-mini', api_key='YOUR_OPENAI_API_KEY')
+lm = dspy.LM('openai/gpt-4o-mini', api_key=os.environ['OPENAI_API_KEY'])
 dspy.configure(lm=lm)
 
 def evaluate_math(expression: str):

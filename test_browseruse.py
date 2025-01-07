@@ -4,7 +4,7 @@ import asyncio
 
 async def main():
     agent = Agent(
-        task="Find a one-way flight from Bali to Oman on 12 January 2025 on Google Flights. Return me the cheapest option.",
+        task="What is the weather in San Francisco?",
         llm=ChatOpenAI(model="gpt-4o"),
     )
     result = await agent.run()
